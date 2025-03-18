@@ -19,3 +19,10 @@ INSERT INTO clients (name, surname, phone, email, travel_destination) VALUES
     ('Abril', 'López', '666333444', 'abril.lopez@email.com', 'Rome'),
     ('Marc', 'Martí', '666555666', 'marc.marti@email.com', 'London'),
     ('Lluis', 'Ferrer', '666777888', 'lluis.ferrer@email.com', 'Barcelona');
+
+
+CREATE TABLE items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  value INT NOT NULL
+);
