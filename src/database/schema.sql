@@ -1,8 +1,8 @@
--- Create database
+
 CREATE DATABASE IF NOT EXISTS travel_agency;
 USE travel_agency;
 
--- Create clients table
+
 CREATE TABLE IF NOT EXISTS clients (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -13,9 +13,9 @@ CREATE TABLE IF NOT EXISTS clients (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Insert sample data
+
 INSERT INTO clients (name, surname, phone, email, travel_destination) VALUES
-    ('Joan', 'Garcia', '666111222', 'joan.garcia@email.com', 'Paris'),
-    ('Maria', 'López', '666333444', 'maria.lopez@email.com', 'Rome'),
-    ('Pere', 'Martí', '666555666', 'pere.marti@email.com', 'London'),
-    ('Anna', 'Ferrer', '666777888', 'anna.ferrer@email.com', 'Barcelona');
+    ('Jana', 'Garcia', '666111222', 'jana.garcia@email.com', 'Paris'),
+    ('Abril', 'López', '666333444', 'abril.lopez@email.com', 'Rome'),
+    ('Marc', 'Martí', '666555666', 'marc.marti@email.com', 'London'),
+    ('Lluis', 'Ferrer', '666777888', 'lluis.ferrer@email.com', 'Barcelona');
